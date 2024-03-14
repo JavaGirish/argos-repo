@@ -5,6 +5,6 @@ test("Verify home page designs", async ({ page }) => {
   await page.goto("/")
   await expect(page.getByAltText('Vercel Logo')).toBeVisible()
   await expect(page.getByAltText('Next.js Logo')).toBeVisible()
-  await expect(page.getByText("Docs")).toBeVisible()
+  await expect(page.getByText("Documents")).toBeVisible()
   await argosScreenshot(page, "Homepage")
 })
